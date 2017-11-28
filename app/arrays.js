@@ -6,7 +6,13 @@ exports.arraysAnswers = {
   },
 
   sum: function(arr) {
+    console.log('running sum')
+    let sum
+    arr.each(function(item) {
+      sum = sum + item
+    })
 
+    return sum
   },
 
   remove: function(arr, item) {
